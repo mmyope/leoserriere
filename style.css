@@ -1,0 +1,70 @@
+/* global definitions */
+:root {
+	/* this sets a lot of our sizing rules and defines various spacing paramters */
+	--ratio: 1.25;
+	--s-5: calc(var(--s-4) / var(--ratio));
+	--s-4: calc(var(--s-3) / var(--ratio));
+	--s-3: calc(var(--s-2) / var(--ratio));
+	--s-2: calc(var(--s-1) / var(--ratio));
+	--s-1: calc(var(--s0) / var(--ratio));
+	--s0: .9rem;
+	--s1: calc(var(--s0) * var(--ratio));
+	--s2: calc(var(--s1) * var(--ratio));
+	--s3: calc(var(--s2) * var(--ratio));
+	--s4: calc(var(--s3) * var(--ratio));
+	--s5: calc(var(--s4) * var(--ratio));
+	/* this is mainly used to define/exclude/capture the max-inline-size, in units of characters */
+	--measure: 60ch;
+	/* column width */
+	--column: 8rem;
+	/* row height */
+	--row: 3.2rem;
+}
+
+/* universal definitions */
+* {
+	box-sizing: border-box;
+	max-inline-size: var(--measure);
+	font-size: var(--s0);
+	font-family: 'EB Garamond', serif;
+    font-weight: 500;
+	cursor: default;
+}
+
+/* important exclusions to the max-inline-size definition */
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+.cover {
+  max-inline-size: none;
+}
+
+a:link { text-decoration: none; color: inherit; cursor: pointer; }
+a:visited { text-decoration: none; color: inherit; }
+
+#t { display: flex; padding: var(--row) var(--s5); height: 95vh;}
+
+#x1, #x2, #x3 { width: var(--column); }
+
+#text { 
+	position: absolute; 
+	margin-left: calc(var(--column) * 3); 
+	width: calc(var(--column) * 2);
+	height: calc(var(--row) * 4);
+	overflow: hidden;
+}
+
+#content-box { 
+	position: flex;
+	background-color: #f6f6f6;
+	margin-left: calc(var(--column) * 4);
+	height: 85vh;
+	width: 50vw;
+}
+
+.y div { height: var(--row); }
+
