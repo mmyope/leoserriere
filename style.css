@@ -65,8 +65,8 @@ a:visited { text-decoration: none; color: orange; }
 a:hover { font-weight: 800; color: orangered; }
 
 h1 { font-family: sans-serif; font-weight: bolder; font-size: var(--s4); margin-bottom: var(--s4); }
-h2 { font-family: sans-serif; font-weight: bold; font-size: var(--s2); margin-left: var(--s3); }
-h3 { font-family: sans-serif; font-weight: normal; font-size: var(--s0); margin-left: var(--s5); text-indent: 1.5ch; }
+h2 { font-family: sans-serif; font-weight: bold; font-size: var(--s2); margin-left: var(--s3); margin-top: 5rem; }
+h3 { font-family: sans-serif; font-weight: normal; font-size: var(--s0); margin-left: var(--s5); margin-top: 5rem; text-indent: 1.5ch; }
 h4 { font-family: sans-serif; font-weight: normal; font-size: calc(var(--s-1)*1.1); margin-left: var(--s5); font-style: italic; }
 h5 { font-family: sans-serif; font-weight: normal; font-size: calc(var(--s-1)*1.1); margin-left: var(--s5); }
 
@@ -74,8 +74,8 @@ img {
     border: solid var(--s-5) transparent;
 	padding: var(--s-5);
 }
+
 img:hover {
-	transition: 1s;
     border-color: orange;
 }
 
@@ -116,6 +116,14 @@ img:hover {
 #content-box > div > img { block-size: 100%; flex-basis: auto; width: auto; }
 #content-box > div > * + * { margin-inline-start: 1rem; }
 #content-box > div.overflowing { padding-block-end: 1rem; }
+
+.contentbox_img { position: inherit;}
+
+.contentbox_img_main { display: inline; }
+.contentbox_img:hover .contentbox_img_main { display: none;}
+
+.contentbox_img_alt { display: none; }
+.contentbox_img:hover .contentbox_img_alt { display: inline;}
 
 #player {
 	display: block;
