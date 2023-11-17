@@ -37,15 +37,9 @@
 	height: var(--s-2);
 	background-color: #ebebeb;
 }
-*::-webkit-scrollbar:hover {
-	background-color: transparent;
-}
-*::-webkit-scrollbar-thumb {
-	background: #000;
-}
-*::-webkit-scrollbar-thumb:hover {
-	background: orange;
-}
+*::-webkit-scrollbar:hover { background-color: transparent; }
+*::-webkit-scrollbar-thumb { background: #000; }
+*::-webkit-scrollbar-thumb:hover { background: orange; }
 
 /* important exclusions to the max-inline-size definition */
 html,
@@ -60,6 +54,8 @@ img {
   max-inline-size: none;
 }
 
+body { background-color: #fbfbfb; }
+
 a:link { text-decoration: none; color: orange; cursor: pointer; }
 a:visited { text-decoration: none; color: orange; }
 a:hover { font-weight: 800; color: orangered; }
@@ -70,14 +66,8 @@ h3 { font-family: sans-serif; font-weight: normal; font-size: var(--s0); margin-
 h4 { font-family: sans-serif; font-weight: normal; font-size: calc(var(--s-1)*1.1); margin-left: var(--s5); font-style: italic; }
 h5 { font-family: sans-serif; font-weight: normal; font-size: calc(var(--s-1)*1.1); margin-left: var(--s5); }
 
-img {
-    border: solid var(--s-5) transparent;
-	padding: var(--s-5);
-}
-
-img:hover {
-    border-color: orange;
-}
+img { border: solid var(--s-5) transparent; padding: var(--s-5); }
+img:hover { border-color: orange; }
 
 #t { display: flex; padding: var(--row) var(--s5); height: 95vh;}
 
@@ -106,8 +96,8 @@ img:hover {
 }
 #content-box > div { 
 	display: flex; 
-	block-size: auto; 
-	margin-top: var(--s5); 
+	block-size: auto;
+	margin-top: var(--s2); 
 	margin-bottom: var(--s5); 
 	overflow-x: auto; 
 	overflow-y: hidden;
