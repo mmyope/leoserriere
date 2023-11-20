@@ -131,7 +131,7 @@ span.blockspam { display: none; }
 
 .index_img { position: absolute; width:10vw; bottom:20vh; right:10vw;}
 
-.index_img_main { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:0.05;}
+.index_img_main { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:0.1;}
 .index_img:hover .index_img_main { display: none;}
 
 .index_img_alt { display: none; }
