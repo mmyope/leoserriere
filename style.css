@@ -121,7 +121,7 @@ span.blockspam { display: none; }
 #content-box > div > * + * { margin-inline-start: 1rem; }
 #content-box > div.overflowing { padding-block-end: 1rem; }
 
-.contentbox_img { position: inherit;}
+.contentbox_img { position: inherit; }
 
 .contentbox_img_main { display: inline; }
 .contentbox_img:hover .contentbox_img_main { display: none;}
@@ -129,13 +129,13 @@ span.blockspam { display: none; }
 .contentbox_img_alt { display: none; }
 .contentbox_img:hover .contentbox_img_alt { display: inline;}
 
-.index_img { position: absolute; width:10vw; bottom:20vh; right:10vw;}
+.index_img { position: absolute; width:10vw; bottom:20vh; right:10vw; cursor: pointer;}
 
-.index_img_main { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:0.1;}
-.index_img:hover .index_img_main { display: none;}
+.index_img_main { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:0.2;  cursor: pointer;}
+.index_img:hover .index_img_main { display: none;  cursor: pointer;}
 
-.index_img_alt { display: none; }
-.index_img:hover .index_img_alt { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:1; border: none;}
+.index_img_alt { display: none;  cursor: pointer;}
+.index_img:hover .index_img_alt { display: inherit; width:10vw; bottom:20vh; right:10vw; opacity:1; border: none; cursor: pointer;}
 
 #player {
 	display: block;
